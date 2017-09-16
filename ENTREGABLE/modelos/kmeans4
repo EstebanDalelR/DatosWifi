@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     bisnesinteligence-weka.filters.unsupervised.attribute.SortLabels-Rfirst-last-SNON-CASE
+Instances:    165
+Attributes:   5
+              Departamento
+              Año
+              Sedes conectadas a Internet
+              Deserción
+              Aprobacion
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 25
+Within cluster sum of squared errors: 163.54254519939104
+
+Initial starting points (random):
+
+Cluster 0: Santander,2013,0.1565,0.036,0.9298
+Cluster 1: Vaupes,2012,0.2061,0.0762,0.7986
+Cluster 2: Caldas,2013,0.3449,0.041,0.8864
+Cluster 3: Putumayo,2013,0.0751,0.0568,0.8853
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                       Cluster#
+Attribute                                                   Full Data         0         1         2         3
+                                                              (165.0)    (44.0)    (26.0)    (19.0)    (76.0)
+=============================================================================================================
+Departamento                                                 Amazonas    Arauca    Vaupes Antioquia  Putumayo
+Año                                                              2013 2011.6136 2012.0385 2013.4737 2014.0132
+Sedes conectadas a Internet                                    0.3391    0.3278    0.2247    0.7743     0.276
+Deserción                                                      0.0431    0.0393    0.0733    0.0298    0.0383
+Aprobacion                                                     0.9198    0.9378     0.869    0.9472    0.9199
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       44 ( 27%)
+1       26 ( 16%)
+2       19 ( 12%)
+3       76 ( 46%)
+
+

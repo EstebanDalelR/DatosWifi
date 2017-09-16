@@ -1,0 +1,203 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     bisnesinteligence-weka.filters.unsupervised.attribute.SortLabels-Rfirst-last-SNON-CASE
+Instances:    165
+Attributes:   5
+              Departamento
+              Año
+              Sedes conectadas a Internet
+              Deserción
+              Aprobacion
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Aprobacion <= 0.9062
+|   Aprobacion <= 0.8704
+|   |   Aprobacion <= 0.8194
+|   |   |   Aprobacion <= 0.7818: Guainia (4.0/1.0)
+|   |   |   Aprobacion > 0.7818
+|   |   |   |   Deserción <= 0.0623: Guainia (2.0)
+|   |   |   |   Deserción > 0.0623: Vaupes (4.0)
+|   |   Aprobacion > 0.8194: Sucre (6.0/1.0)
+|   Aprobacion > 0.8704
+|   |   Deserción <= 0.0489
+|   |   |   Sedes conectadas a Internet <= 0.2015: Choco (4.0/1.0)
+|   |   |   Sedes conectadas a Internet > 0.2015
+|   |   |   |   Sedes conectadas a Internet <= 0.2902: Tolima (6.0/3.0)
+|   |   |   |   Sedes conectadas a Internet > 0.2902
+|   |   |   |   |   Sedes conectadas a Internet <= 0.364: Caldas (5.0/1.0)
+|   |   |   |   |   Sedes conectadas a Internet > 0.364: Antioquia (2.0/1.0)
+|   |   Deserción > 0.0489
+|   |   |   Aprobacion <= 0.8987
+|   |   |   |   Aprobacion <= 0.8767: Casanare (2.0/1.0)
+|   |   |   |   Aprobacion > 0.8767
+|   |   |   |   |   Sedes conectadas a Internet <= 0.264
+|   |   |   |   |   |   Aprobacion <= 0.8835: Quindio (2.0/1.0)
+|   |   |   |   |   |   Aprobacion > 0.8835: Putumayo (4.0/1.0)
+|   |   |   |   |   Sedes conectadas a Internet > 0.264
+|   |   |   |   |   |   Aprobacion <= 0.8889: Vichada (3.0/1.0)
+|   |   |   |   |   |   Aprobacion > 0.8889: Risaralda (3.0/1.0)
+|   |   |   Aprobacion > 0.8987
+|   |   |   |   Sedes conectadas a Internet <= 0.2061: Narino (2.0/1.0)
+|   |   |   |   Sedes conectadas a Internet > 0.2061: Cesar (3.0/1.0)
+Aprobacion > 0.9062
+|   Sedes conectadas a Internet <= 0.4002
+|   |   Sedes conectadas a Internet <= 0.2143
+|   |   |   Deserción <= 0.0233
+|   |   |   |   Año <= 2012: Archipielago de San Andres, Providencia y Santa Catalina (2.0/1.0)
+|   |   |   |   Año > 2012: Boyaca (2.0/1.0)
+|   |   |   Deserción > 0.0233
+|   |   |   |   Sedes conectadas a Internet <= 0.1502: Caqueta (15.0/10.0)
+|   |   |   |   Sedes conectadas a Internet > 0.1502
+|   |   |   |   |   Sedes conectadas a Internet <= 0.1912
+|   |   |   |   |   |   Deserción <= 0.0388: Norte de Santander (4.0/2.0)
+|   |   |   |   |   |   Deserción > 0.0388
+|   |   |   |   |   |   |   Deserción <= 0.059: Arauca (4.0/2.0)
+|   |   |   |   |   |   |   Deserción > 0.059: Norte de Santander (2.0/1.0)
+|   |   |   |   |   Sedes conectadas a Internet > 0.1912
+|   |   |   |   |   |   Deserción <= 0.0459: Meta (3.0/1.0)
+|   |   |   |   |   |   Deserción > 0.0459: Amazonas (2.0/1.0)
+|   |   Sedes conectadas a Internet > 0.2143
+|   |   |   Aprobacion <= 0.9545
+|   |   |   |   Sedes conectadas a Internet <= 0.2995
+|   |   |   |   |   Deserción <= 0.0266: Boyaca (4.0/2.0)
+|   |   |   |   |   Deserción > 0.0266: Santander (10.0/6.0)
+|   |   |   |   Sedes conectadas a Internet > 0.2995
+|   |   |   |   |   Deserción <= 0.0413
+|   |   |   |   |   |   Deserción <= 0.036
+|   |   |   |   |   |   |   Deserción <= 0.0304: Cordoba (2.0)
+|   |   |   |   |   |   |   Deserción > 0.0304
+|   |   |   |   |   |   |   |   Año <= 2012: Bolivar (2.0)
+|   |   |   |   |   |   |   |   Año > 2012: Magdalena (3.0/1.0)
+|   |   |   |   |   |   Deserción > 0.036: Casanare (3.0/1.0)
+|   |   |   |   |   Deserción > 0.0413
+|   |   |   |   |   |   Sedes conectadas a Internet <= 0.3273: Cesar (3.0/2.0)
+|   |   |   |   |   |   Sedes conectadas a Internet > 0.3273: La Guajira (5.0/2.0)
+|   |   |   Aprobacion > 0.9545
+|   |   |   |   Deserción <= 0.0291
+|   |   |   |   |   Sedes conectadas a Internet <= 0.2218: Cundinamarca (2.0/1.0)
+|   |   |   |   |   Sedes conectadas a Internet > 0.2218: Narino (6.0/2.0)
+|   |   |   |   Deserción > 0.0291
+|   |   |   |   |   Año <= 2013: Cundinamarca (3.0)
+|   |   |   |   |   Año > 2013: Arauca (3.0/2.0)
+|   Sedes conectadas a Internet > 0.4002
+|   |   Aprobacion <= 0.9508
+|   |   |   Sedes conectadas a Internet <= 0.5908
+|   |   |   |   Sedes conectadas a Internet <= 0.4493
+|   |   |   |   |   Sedes conectadas a Internet <= 0.431: Valle del Cauca (4.0/1.0)
+|   |   |   |   |   Sedes conectadas a Internet > 0.431: Cauca (2.0)
+|   |   |   |   Sedes conectadas a Internet > 0.4493
+|   |   |   |   |   Deserción <= 0.0317: Bolivar (3.0/1.0)
+|   |   |   |   |   Deserción > 0.0317: Risaralda (3.0/1.0)
+|   |   |   Sedes conectadas a Internet > 0.5908: Antioquia (5.0/1.0)
+|   |   Aprobacion > 0.9508
+|   |   |   Sedes conectadas a Internet <= 0.88
+|   |   |   |   Sedes conectadas a Internet <= 0.4696: Cauca (2.0/1.0)
+|   |   |   |   Sedes conectadas a Internet > 0.4696
+|   |   |   |   |   Deserción <= 0.0222: Archipielago de San Andres, Providencia y Santa Catalina (4.0/1.0)
+|   |   |   |   |   Deserción > 0.0222: Atlantico (4.0)
+|   |   |   Sedes conectadas a Internet > 0.88: Bogota (6.0/1.0)
+
+Number of Leaves  : 	44
+
+Size of the tree : 	87
+
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         105               63.6364 %
+Incorrectly Classified Instances        60               36.3636 %
+Kappa statistic                          0.625 
+Mean absolute error                      0.0276
+Root mean squared error                  0.1174
+Relative absolute error                 46.8958 %
+Root relative squared error             68.4805 %
+Total Number of Instances              165     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.200    0.006    0.500      0.200    0.286      0.304    0.956     0.307     Amazonas
+                 1.000    0.013    0.714      1.000    0.833      0.840    0.996     0.783     Antioquia
+                 0.600    0.025    0.429      0.600    0.500      0.489    0.980     0.456     Arauca
+                 0.800    0.013    0.667      0.800    0.727      0.721    0.991     0.667     Archipielago de San Andres, Providencia y Santa Catalina
+                 0.800    0.000    1.000      0.800    0.889      0.892    0.998     0.925     Atlantico
+                 1.000    0.006    0.833      1.000    0.909      0.910    0.997     0.833     Bogota
+                 0.800    0.006    0.800      0.800    0.800      0.794    0.996     0.831     Bolivar
+                 0.600    0.019    0.500      0.600    0.545      0.532    0.977     0.425     Boyaca
+                 0.800    0.006    0.800      0.800    0.800      0.794    0.994     0.751     Caldas
+                 1.000    0.063    0.333      1.000    0.500      0.559    0.969     0.333     Caqueta
+                 0.600    0.013    0.600      0.600    0.600      0.588    0.983     0.542     Casanare
+                 0.600    0.006    0.750      0.600    0.667      0.662    0.987     0.693     Cauca
+                 0.600    0.019    0.500      0.600    0.545      0.532    0.985     0.558     Cesar
+                 0.600    0.006    0.750      0.600    0.667      0.662    0.985     0.631     Choco
+                 0.400    0.000    1.000      0.400    0.571      0.627    0.993     0.758     Cordoba
+                 0.800    0.006    0.800      0.800    0.800      0.794    0.997     0.885     Cundinamarca
+                 1.000    0.006    0.833      1.000    0.909      0.910    0.998     0.900     Guainia
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.948     0.242     Guaviare
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.956     0.287     Huila
+                 0.600    0.013    0.600      0.600    0.600      0.588    0.981     0.520     La Guajira
+                 0.400    0.006    0.667      0.400    0.500      0.505    0.979     0.497     Magdalena
+                 0.400    0.006    0.667      0.400    0.500      0.505    0.963     0.449     Meta
+                 1.000    0.019    0.625      1.000    0.769      0.783    0.992     0.658     Narino
+                 0.600    0.019    0.500      0.600    0.545      0.532    0.971     0.395     Norte de Santander
+                 0.600    0.006    0.750      0.600    0.667      0.662    0.993     0.700     Putumayo
+                 0.200    0.006    0.500      0.200    0.286      0.304    0.971     0.375     Quindio
+                 0.800    0.013    0.667      0.800    0.727      0.721    0.991     0.644     Risaralda
+                 0.800    0.038    0.400      0.800    0.533      0.548    0.976     0.391     Santander
+                 1.000    0.006    0.833      1.000    0.909      0.910    0.997     0.833     Sucre
+                 0.600    0.019    0.500      0.600    0.545      0.532    0.983     0.477     Tolima
+                 0.600    0.006    0.750      0.600    0.667      0.662    0.989     0.641     Valle del Cauca
+                 0.800    0.000    1.000      0.800    0.889      0.892    0.999     0.967     Vaupes
+                 0.400    0.006    0.667      0.400    0.500      0.505    0.988     0.586     Vichada
+Weighted Avg.    0.636    0.011    0.634      0.636    0.612      0.614    0.984     0.604     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z aa ab ac ad ae af ag   <-- classified as
+  1  0  0  0  0  0  0  0  0  1  0  0  0  1  0  0  0  0  0  1  0  0  0  1  0  0  0  0  0  0  0  0  0 |  a = Amazonas
+  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = Antioquia
+  1  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 |  c = Arauca
+  0  0  0  4  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = Archipielago de San Andres, Providencia y Santa Catalina
+  0  0  0  1  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = Atlantico
+  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = Bogota
+  0  0  0  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0 |  g = Bolivar
+  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0 |  h = Boyaca
+  0  0  0  0  0  0  0  1  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = Caldas
+  0  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = Caqueta
+  0  0  0  0  0  0  0  1  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0 |  k = Casanare
+  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0 |  l = Cauca
+  0  1  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0 |  m = Cesar
+  0  0  0  1  0  0  0  0  0  1  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  n = Choco
+  0  0  0  0  0  0  0  1  0  0  0  1  0  0  2  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = Cordoba
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  4  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0 |  p = Cundinamarca
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  q = Guainia
+  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  1  0  0  0 |  r = Guaviare
+  0  0  1  0  0  0  0  0  0  1  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0 |  s = Huila
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  1  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0 |  t = La Guajira
+  0  0  1  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  2  0  0  0  0  0  0  1  0  0  0  0  0 |  u = Magdalena
+  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  1  1  0  0  0  0  0 |  v = Meta
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0 |  w = Narino
+  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0 |  x = Norte de Santander
+  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0 |  y = Putumayo
+  0  1  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  0  0  0  0  0  0 |  z = Quindio
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  4  0  0  0  0  0  1 | aa = Risaralda
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  4  0  0  0  0  0 | ab = Santander
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  5  0  0  0  0 | ac = Sucre
+  0  0  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0 | ad = Tolima
+  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  3  0  0 | ae = Valle del Cauca
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  4  0 | af = Vaupes
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  1  0  1  0  0  0  0  0  0  2 | ag = Vichada
+
+
